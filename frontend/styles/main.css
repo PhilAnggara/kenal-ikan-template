@@ -7,7 +7,6 @@
 	Common Styles Initials
 ==============================================================*/
 body {
-  background: #d9d9d9;
   font-family: "Assistant", sans-serif;
 }
 
@@ -39,6 +38,7 @@ nav.navbar .navbar-nav .nav-link:hover::after {
 }
 
 .jumbotron {
+  margin-top: 80px;
   padding: 2rem 1rem;
   background-image: url("../images/background-2.jpg");
   background-size: cover;
@@ -54,6 +54,40 @@ nav.navbar .navbar-nav .nav-link:hover::after {
   margin-top: 80px;
   font-size: 50px;
   padding: 0 20%;
+}
+
+.info-panel {
+  margin-top: -50px;
+}
+.info-panel .card {
+  border-bottom: 10px solid #f19f4d;
+}
+.info-panel .card:hover {
+  z-index: 10;
+}
+.info-panel .card .card-body .card-text {
+  font-family: "Ubuntu", sans-serif;
+}
+.info-panel .card .card-body .card-title {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.h-scale {
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow;
+}
+
+.h-scale:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.tentang h1 {
+  font-family: "Acme", sans-serif;
+  color: #1d2731;
+}
+.tentang .tentang-content {
+  background-color: #cae3ff;
+  font-family: "Ubuntu", sans-serif;
 }
 
 /*==============================================================

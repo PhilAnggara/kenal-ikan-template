@@ -16,7 +16,7 @@
 <body>
   
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           Kenal Ikan
@@ -27,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
             <a class="nav-link me-3 active" href="index.html">Beranda</a>
-            <a class="nav-link me-3" href="#">Pindai</a>
+            <a class="nav-link me-3" href="" data-bs-toggle="modal" data-bs-target="#pindaiModal">Pindai</a>
             <a class="nav-link" href="#tentang">Tentang</a>
           </div>
         </div>
@@ -45,10 +45,79 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-10">
-        <div class="card shadow">
-          <div class="card-body">
-            This is some text within a card body.
+        <div class="info-panel card-group shadow">
+          <div class="card h-scale">
+            <div class="card-body">
+              <div class="row g-0">
+                <div class="col-9">
+                  <p class="card-text">Ikan yang dilindungi</p>
+                  <h5 class="card-title">150</h5>
+                </div>
+                <div class="col-3 d-flex align-items-center">
+                  <i class="fad fa-shield-check fa-3x text-success"></i>
+                </div>
+              </div>
+              <a href="dilindungi.html" class="stretched-link"></a>
+            </div>
           </div>
+          <div class="card h-scale">
+            <div class="card-body">
+              <div class="row g-0">
+                <div class="col-9">
+                  <p class="card-text">Ikan yang dapat dikonsumsi</p>
+                  <h5 class="card-title">150</h5>
+                </div>
+                <div class="col-3 d-flex align-items-center">
+                  <i class="fad fa-fish-cooked fa-3x text-primary"></i>
+                </div>
+              </div>
+              <a href="dilindungi.html" class="stretched-link"></a>
+            </div>
+          </div>
+          <div class="card h-scale">
+            <div class="card-body">
+              <div class="row g-0">
+                <div class="col-9">
+                  <p class="card-text">Ikan yang tidak dilindungi dan tidak dapat dikonsumsi</p>
+                  <h5 class="card-title">150</h5>
+                </div>
+                <div class="col-3 d-flex align-items-center">
+                  <i class="fad fa-exclamation-circle fa-3x text-danger"></i>
+                </div>
+              </div>
+              <a href="dilindungi.html" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="tentang pt-5" id="tentang">
+    <h1 class="text-center my-5">Tentang</h1>
+    <div class="tentang-content border-top py-5">
+      <div class="container">
+        <p class="fw-bold text-muted">Lorem, ipsum dolor.</p>
+        <p class="text-justify">
+          &emsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ex nihil natus est error distinctio repellat minima corrupti consectetur nobis fugiat exercitationem commodi eum odio obcaecati tenetur ea saepe voluptate ipsam itaque incidunt eius rem, facilis unde. Qui eum sapiente illo commodi est pariatur dolorum quidem, minima iure nemo necessitatibus? Fuga, facere voluptatum vero molestiae esse possimus, nisi odio laudantium magni sequi nesciunt praesentium dolor molestias! Ducimus voluptatibus iure atque quia vero rerum laborum reprehenderit, iusto nemo praesentium ullam expedita!
+        </p>
+        <p class="fw-bold text-muted">Lorem, ipsum.</p>
+        <p class="text-justify">
+          &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo necessitatibus nam aliquid tempore optio veritatis illum amet quia tempora dolorum ducimus reprehenderit placeat maiores quisquam eos assumenda, beatae ratione! Tenetur provident eos at officia illo labore nihil. Aliquam iusto natus cupiditate rerum, sed quisquam iure, tempore voluptates culpa quaerat quam dolores dolore eveniet nulla corrupti animi totam? Suscipit aliquid quo, vel, excepturi tempora error ipsam magnam sequi distinctio modi adipisci?
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="pindaiModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Pindai</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
         </div>
       </div>
     </div>
