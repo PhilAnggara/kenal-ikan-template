@@ -3,11 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Praise&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /*==============================================================
 	Common Styles Initials
 ==============================================================*/
 body {
-  font-family: "Assistant", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 /*==============================================================
@@ -37,8 +38,27 @@ nav.navbar .navbar-nav .nav-link:hover::after {
   margin-bottom: -8px;
 }
 
-.jumbotron {
+.nav-spacing {
   margin-top: 80px;
+}
+
+.rounded-lg {
+  border-radius: 10px !important;
+}
+
+.rounded-xl {
+  border-radius: 20px !important;
+}
+
+.rounded-left {
+  border-radius: 20px 0 0 20px !important;
+}
+
+.rounded-right {
+  border-radius: 0 20px 20px 0 !important;
+}
+
+.jumbotron {
   padding: 2rem 1rem;
   background-image: url("../images/background-2.jpg");
   background-size: cover;
@@ -77,8 +97,41 @@ nav.navbar .navbar-nav .nav-link:hover::after {
 }
 
 .h-scale:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) !important;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card-img-scale {
+  box-shadow: 0 5px 10px #2e2e2e;
+  overflow: hidden;
+}
+.card-img-scale:hover {
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15) !important;
+  background-color: #ececec;
+}
+.card-img-scale:hover img {
+  transform: scale(1.3);
+}
+.card-img-scale img {
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform-origin: 50% 100%;
+  transition: transform 0.15s;
+}
+
+.page-title {
+  font-family: "Acme", sans-serif;
+  font-weight: 200;
+  color: #1d2731;
+}
+
+.bg-blue {
+  background-color: #4484ce;
+}
+
+.content {
+  min-height: 80vh;
 }
 
 .tentang h1 {
@@ -86,16 +139,15 @@ nav.navbar .navbar-nav .nav-link:hover::after {
   color: #1d2731;
 }
 .tentang .tentang-content {
-  background-color: #cae3ff;
   font-family: "Ubuntu", sans-serif;
+}
+.tentang .tentang-content .fw-bold {
+  color: #c4c4c4 !important;
+}
+.tentang .tentang-content p {
+  color: #fff;
 }
 
 /*==============================================================
 	Global Styles End
-==============================================================*/
-/*==============================================================
-	Login Page Start
-==============================================================*/
-/*==============================================================
-	Login Page End
 ==============================================================*//*# sourceMappingURL=main.css.map */

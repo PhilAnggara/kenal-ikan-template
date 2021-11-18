@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenal Ikan</title>
+  <link rel="shortcut icon" type="image/x-icon" href="frontend/images/favicon.ico">
+  <!-- Styles -->
+  <link rel="stylesheet" href="frontend/vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="frontend/vendors/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="frontend/vendors/aos/aos.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+  <link rel="stylesheet" href="frontend/styles/main.css">
+  <!-- End of styles -->
+</head>
+<body>
+  
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          Kenal Ikan
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link me-3" href="index.html">Beranda</a>
+            <a class="nav-link me-3" href="" data-bs-toggle="modal" data-bs-target="#pindaiModal">Pindai</a>
+            <a class="nav-link" href="index.html#tentang">Tentang</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+  </header>
+
+  <section class="content nav-spacing mb-5">
+    <div class="container pt-5">
+      <div class="row my-3">
+        <div class="col col-md-8">
+          <h5 data-aos="fade-down" class="page-title">
+            <i class="fad fa-chevron-circle-right text-primary"></i>
+            &nbsp;Ikan yang Dapat Dikonsumsi
+          </h5>
+        </div>
+        <div class="col col-md-4">
+          <div data-aos="fade-down" class="input-group mb-3">
+            <input type="search" class="form-control" placeholder="Cari ikan..." autofocus>
+            <button class="btn btn-outline-primary" type="button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-cols-2 row-cols-md-5 g-4">
+        <div class="col">
+          <div data-aos="zoom-in" data-aos-delay="100" class="card rounded-lg h-100 card-img-scale shadow">
+            <img src="frontend/images/Dapat Dikonsumsi/black-sea-sprat.jpeg" class="card-img-top">
+            <div class="card-body">
+              <p class="card-title">Black Sea Sprat</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div data-aos="zoom-in" data-aos-delay="200" class="card rounded-lg h-100 card-img-scale shadow">
+            <img src="frontend/images/Dapat Dikonsumsi/git-head-brem.jpeg" class="card-img-top">
+            <div class="card-body">
+              <p class="card-title">Git Head Brem</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div data-aos="zoom-in" data-aos-delay="300" class="card rounded-lg h-100 card-img-scale shadow">
+            <img src="frontend/images/Dapat Dikonsumsi/hourse-mackerel.jpeg" class="card-img-top">
+            <div class="card-body">
+              <p class="card-title">Hourse Mackerel</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div data-aos="zoom-in" data-aos-delay="400" class="card rounded-lg h-100 card-img-scale shadow">
+            <img src="frontend/images/Dapat Dikonsumsi/red-mullet.jpeg" class="card-img-top">
+            <div class="card-body">
+              <p class="card-title">Red Mullet</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div data-aos="zoom-in" data-aos-delay="500" class="card rounded-lg h-100 card-img-scale shadow">
+            <img src="frontend/images/Dapat Dikonsumsi/red-sea-brem.jpeg" class="card-img-top">
+            <div class="card-body">
+              <p class="card-title">Red Sea Brem</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div data-aos="zoom-in" data-aos-delay="600" class="card rounded-lg h-100 card-img-scale shadow">
+            <img src="frontend/images/Dapat Dikonsumsi/sea-bass.jpeg" class="card-img-top">
+            <div class="card-body">
+              <p class="card-title">Sea Bass</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div data-aos="zoom-in" data-aos-delay="700" class="card rounded-lg h-100 card-img-scale shadow">
+            <img src="frontend/images/Dapat Dikonsumsi/trout.jpeg" class="card-img-top">
+            <div class="card-body">
+              <p class="card-title">Trout</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <nav>
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link"><</a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <footer class="sticky-footer bg-white pb-2 border-top">
+    <div class="container-fluid">
+      <div class="row border-top justify-content-center align-items-center pt-2">
+        <div class="col-auto text-secondary copyright">
+          <small>Copyright © 2021 Kenal Ikan</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="frontend/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="frontend/vendors/aos/aos.js"></script>
+  <script src="frontend/scripts/main.js"></script>
+  <!-- End of script -->
+</body>
+</html>

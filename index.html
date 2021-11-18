@@ -9,6 +9,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="frontend/vendors/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="frontend/vendors/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="frontend/vendors/aos/aos.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
   <link rel="stylesheet" href="frontend/styles/main.css">
   <!-- End of styles -->
@@ -34,9 +35,9 @@
       </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid nav-spacing">
       <div class="container">
-        <h1 class="display-4">Aplikasi Pendeteksi Jenis Ikan Air Asin yang Dapat Dikonsumsi</h1>
+        <h1 data-aos="fade-down" class="display-4">Aplikasi Pendeteksi Jenis Ikan Air Asin yang Dapat Dikonsumsi</h1>
       </div>
     </div>
     
@@ -45,12 +46,12 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-10">
-        <div class="info-panel card-group shadow">
-          <div class="card h-scale">
+        <div class="info-panel card-group">
+          <div data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="300" class="card rounded-left h-scale shadow">
             <div class="card-body">
               <div class="row g-0">
                 <div class="col-9">
-                  <p class="card-text">Ikan yang dilindungi</p>
+                  <p class="card-text text-muted">Ikan yang dilindungi</p>
                   <h5 class="card-title">150</h5>
                 </div>
                 <div class="col-3 d-flex align-items-center">
@@ -60,32 +61,32 @@
               <a href="dilindungi.html" class="stretched-link"></a>
             </div>
           </div>
-          <div class="card h-scale">
+          <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="300" class="card h-scale shadow">
             <div class="card-body">
               <div class="row g-0">
                 <div class="col-9">
-                  <p class="card-text">Ikan yang dapat dikonsumsi</p>
+                  <p class="card-text text-muted">Ikan yang dapat dikonsumsi</p>
                   <h5 class="card-title">150</h5>
                 </div>
                 <div class="col-3 d-flex align-items-center">
                   <i class="fad fa-fish-cooked fa-3x text-primary"></i>
                 </div>
               </div>
-              <a href="dilindungi.html" class="stretched-link"></a>
+              <a href="dapat-dikonsumsi.html" class="stretched-link"></a>
             </div>
           </div>
-          <div class="card h-scale">
+          <div data-aos="zoom-in-left" data-aos-delay="100" data-aos-duration="300" class="card rounded-right h-scale shadow">
             <div class="card-body">
               <div class="row g-0">
                 <div class="col-9">
-                  <p class="card-text">Ikan yang tidak dilindungi dan tidak dapat dikonsumsi</p>
+                  <p class="card-text text-muted">Ikan yang tidak dilindungi dan tidak dapat dikonsumsi</p>
                   <h5 class="card-title">150</h5>
                 </div>
                 <div class="col-3 d-flex align-items-center">
                   <i class="fad fa-exclamation-circle fa-3x text-danger"></i>
                 </div>
               </div>
-              <a href="dilindungi.html" class="stretched-link"></a>
+              <a href="tidak-dapat-dikonsumsi.html" class="stretched-link"></a>
             </div>
           </div>
         </div>
@@ -94,8 +95,8 @@
   </div>
 
   <section class="tentang pt-5" id="tentang">
-    <h1 class="text-center my-5">Tentang</h1>
-    <div class="tentang-content border-top py-5">
+    <h1 data-aos="flip-up" class="text-center my-5">- Tentang -</h1>
+    <div data-aos="fade-right" class="tentang-content bg-blue border-top py-5">
       <div class="container">
         <p class="fw-bold text-muted">Lorem, ipsum dolor.</p>
         <p class="text-justify">
@@ -108,6 +109,16 @@
       </div>
     </div>
   </section>
+
+  <footer class="sticky-footer bg-white pb-2 border-top">
+    <div class="container-fluid">
+      <div class="row border-top justify-content-center align-items-center pt-2">
+        <div class="col-auto text-secondary copyright">
+          <small>Copyright © 2021 Kenal Ikan</small>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <div class="modal fade" id="pindaiModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -125,6 +136,7 @@
 
   <!-- Script -->
   <script src="frontend/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="frontend/vendors/aos/aos.js"></script>
   <script src="frontend/scripts/main.js"></script>
   <!-- End of script -->
 </body>
