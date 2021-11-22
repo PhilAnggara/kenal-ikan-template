@@ -27,72 +27,73 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link me-3 active" href="index.html">Beranda</a>
-            <a class="nav-link me-3" href="" data-bs-toggle="modal" data-bs-target="#pindaiModal">Pindai</a>
-            <a class="nav-link" href="#tentang">Tentang</a>
+            <a class="nav-link nav-link-hvr nav-home me-3 active" href="index.html">Beranda</a>
+            <a class="nav-link nav-link-hvr me-3" href="" data-bs-toggle="modal" data-bs-target="#pindaiModal">Pindai</a>
+            <a class="nav-link nav-link-hvr nav-tentang" href="#tentang">Tentang</a>
           </div>
         </div>
       </div>
     </nav>
+    
+  </header>
 
+  <section id="home">
     <div class="jumbotron jumbotron-fluid nav-spacing">
       <div class="container">
         <h1 data-aos="fade-down" class="display-4">Aplikasi Pendeteksi Jenis Ikan Air Asin yang Dapat Dikonsumsi</h1>
       </div>
     </div>
-    
-  </header>
-
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div class="info-panel card-group">
-          <div data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="300" class="card rounded-left h-scale shadow">
-            <div class="card-body">
-              <div class="row g-0">
-                <div class="col-9">
-                  <p class="card-text text-muted">Ikan yang dilindungi</p>
-                  <h5 class="card-title">150</h5>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="info-panel card-group">
+            <div data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="300" class="card rounded-left h-scale shadow">
+              <div class="card-body">
+                <div class="row g-0">
+                  <div class="col-9">
+                    <p class="card-text text-muted">Ikan yang dilindungi</p>
+                    <h5 class="card-title">150</h5>
+                  </div>
+                  <div class="col-3 d-flex align-items-center">
+                    <i class="fad fa-shield-check fa-3x text-success"></i>
+                  </div>
                 </div>
-                <div class="col-3 d-flex align-items-center">
-                  <i class="fad fa-shield-check fa-3x text-success"></i>
-                </div>
+                <a href="dilindungi.html" class="stretched-link"></a>
               </div>
-              <a href="dilindungi.html" class="stretched-link"></a>
             </div>
-          </div>
-          <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="300" class="card h-scale shadow">
-            <div class="card-body">
-              <div class="row g-0">
-                <div class="col-9">
-                  <p class="card-text text-muted">Ikan yang dapat dikonsumsi</p>
-                  <h5 class="card-title">150</h5>
+            <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="300" class="card h-scale shadow">
+              <div class="card-body">
+                <div class="row g-0">
+                  <div class="col-9">
+                    <p class="card-text text-muted">Ikan yang dapat dikonsumsi</p>
+                    <h5 class="card-title">150</h5>
+                  </div>
+                  <div class="col-3 d-flex align-items-center">
+                    <i class="fad fa-fish-cooked fa-3x text-primary"></i>
+                  </div>
                 </div>
-                <div class="col-3 d-flex align-items-center">
-                  <i class="fad fa-fish-cooked fa-3x text-primary"></i>
-                </div>
+                <a href="dapat-dikonsumsi.html" class="stretched-link"></a>
               </div>
-              <a href="dapat-dikonsumsi.html" class="stretched-link"></a>
             </div>
-          </div>
-          <div data-aos="zoom-in-left" data-aos-delay="100" data-aos-duration="300" class="card rounded-right h-scale shadow">
-            <div class="card-body">
-              <div class="row g-0">
-                <div class="col-9">
-                  <p class="card-text text-muted">Ikan yang tidak dilindungi dan tidak dapat dikonsumsi</p>
-                  <h5 class="card-title">150</h5>
+            <div data-aos="zoom-in-left" data-aos-delay="100" data-aos-duration="300" class="card rounded-right h-scale shadow">
+              <div class="card-body">
+                <div class="row g-0">
+                  <div class="col-9">
+                    <p class="card-text text-muted">Ikan yang tidak dilindungi dan tidak dapat dikonsumsi</p>
+                    <h5 class="card-title">150</h5>
+                  </div>
+                  <div class="col-3 d-flex align-items-center">
+                    <i class="fad fa-exclamation-circle fa-3x text-danger"></i>
+                  </div>
                 </div>
-                <div class="col-3 d-flex align-items-center">
-                  <i class="fad fa-exclamation-circle fa-3x text-danger"></i>
-                </div>
+                <a href="tidak-dapat-dikonsumsi.html" class="stretched-link"></a>
               </div>
-              <a href="tidak-dapat-dikonsumsi.html" class="stretched-link"></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <section class="tentang pt-5" id="tentang">
     <h1 data-aos="flip-up" class="text-center my-5">- Tentang -</h1>
@@ -123,12 +124,24 @@
   <div class="modal fade" id="pindaiModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Pindai</h5>
+        <div class="modal-header bg-primary">
+          <h5 class="modal-title text-white" id="exampleModalLabel">Pindai</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          
+        <div class="modal-body py-4">
+
+          <div class="image-preview" id="imagePreview">
+            <img src="" alt="Image Preview" class="ip-image">
+            <span class="ip-default-text">Pilih Gambar</span>
+          </div>
+          <div class="input-group">
+            <input type="file" class="form-control" id="inpFile" accept="image/*">
+            <button class="btn btn-primary" type="submit">
+              <i class="fal fa-file-search"></i>
+              Cari
+            </button>
+          </div>
+
         </div>
       </div>
     </div>

@@ -26,6 +26,9 @@ nav.navbar {
 		}
 		.nav-link {
 			text-transform: uppercase;
+		}
+		.nav-link-hvr {
+			text-transform: uppercase;
 			&:hover::after {
 				content: '';
 				display: block;
@@ -137,6 +140,31 @@ nav.navbar {
 		p {
 			color: #fff;
 		}
+	}
+}
+.image-preview {
+	width: 100%;
+	min-height: 200px;
+	cursor: pointer;
+	border: 2px solid #dddddd;
+	border-radius: 10px;
+	margin-bottom: 15px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	color: #cccccc;
+	transition: background-color .2s;
+
+	&:hover {
+		background-color: #f0f0f0;
+		color: #cccccc;
+	}
+	
+	.ip-image {
+		display: none;
+		width: 100%;
 	}
 }
 /*==============================================================
