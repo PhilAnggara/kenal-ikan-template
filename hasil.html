@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenal Ikan</title>
+  <link rel="shortcut icon" type="image/x-icon" href="frontend/images/favicon.ico">
+  <!-- Styles -->
+  <link rel="stylesheet" href="frontend/vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="frontend/vendors/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="frontend/vendors/aos/aos.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+  <link rel="stylesheet" href="frontend/styles/main.css">
+  <!-- End of styles -->
+</head>
+<body>
+  
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          Kenal Ikan
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link nav-link-hvr me-3" href="index.html">Beranda</a>
+            <a class="nav-link nav-link-hvr me-3" href="" data-bs-toggle="modal" data-bs-target="#pindaiModal">Pindai</a>
+            <a class="nav-link nav-link-hvr me-3" href="index.html#tentang">Tentang</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+  </header>
+
+  <section class="content nav-spacing mb-5">
+    <div class="container pt-5">
+      <div class="row my-3">
+        <div class="col-12 col-md-8">
+          <h5 data-aos="fade-down" class="page-title">
+            <i class="fad fa-chevron-circle-right text-primary"></i>
+            &nbsp;Hasil Deteksi Ikan
+          </h5>
+        </div>
+      </div>
+
+      <div data-aos="zoom-in" class="card rounded-lg shadow">
+        <div class="card-body">
+
+          <div class="row gx-0">
+            <div class="col-5">
+              <div class="card rounded-lg h-100 shadow">
+                <img src="frontend/images/ikan.jpeg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Ikan</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-2 d-flex align-items-center justify-content-center">
+              <div class="d-none d-md-block">
+                <i class="fad fa-arrow-alt-right fa-7x text-primary"></i>
+              </div>
+              <div class="d-block d-md-none">
+                <i class="fad fa-arrow-alt-right fa-2x text-primary"></i>
+              </div>
+            </div>
+            
+            <div class="col-5">
+              <div class="card rounded-lg h-100 shadow">
+                <img src="frontend/images/matrix.jpeg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Matrix</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row d-flex justify-content-center mt-5">
+            <div class="col-12 col-md-6 text-center">
+
+              <table class="table table-bordered shadow">
+                <tbody>
+                  <tr>
+                    <td class="w-50">Precission</td>
+                    <td class="w-50">
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Recall</td>
+                    <td>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Accuracy</td>
+                    <td>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="table table-bordered align-middle shadow">
+                <tbody>
+                  <tr>
+                    <th class="w-50">Tuna</th>
+                    <td class="w-50">Ikan yang dapat dikonsumsi</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <a href="index.html" class="btn btn-outline-success">
+                <i class="fad fa-chevron-circle-left"></i>
+                Kembali Ke Beranda
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="sticky-footer bg-white pb-2 border-top">
+    <div class="container-fluid">
+      <div class="row border-top justify-content-center align-items-center pt-2">
+        <div class="col-auto text-secondary copyright">
+          <small>Copyright © 2021 Kenal Ikan</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="pindaiModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-primary">
+          <h5 class="modal-title text-white" id="exampleModalLabel">Pindai</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body py-4">
+
+          <div class="image-preview" id="imagePreview">
+            <img src="" alt="Image Preview" class="ip-image">
+            <span class="ip-default-text">Pilih Gambar</span>
+          </div>
+          <div class="input-group">
+            <input type="file" class="form-control" id="inpFile" accept="image/*">
+            <button class="btn btn-primary" type="submit">
+              <i class="fal fa-file-search"></i>
+              Cari
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="frontend/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="frontend/vendors/aos/aos.js"></script>
+  <script src="frontend/scripts/main.js"></script>
+  <!-- End of script -->
+</body>
+</html>
